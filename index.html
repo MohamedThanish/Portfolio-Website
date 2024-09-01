@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header id="navhome">
+    <nav>
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+    </nav>
+</header> 
+
+<div id="home" class="container">
+    <div class="content">
+        <h1>Hi, I'm Mohamed Thanish</h1>
+        <p>Frontend developer<br> High level experience in web design and development knowledge, producing quality work.</p>
+        <button class="btn" id="contactMeBtn">Contact me</button>
+        <!-- Move the scroll down text below the button -->
+        <a href="#about-me" class="scroll-link"><p class="scroll-down1">Scroll down</p></a>
+    </div>
+</div>
+
+<div id="about-me" class="about-me-section">
+    <div class="about-me-content">
+        <img src="./WhatsApp Image 2024-08-30 at 9.00.47 AM (1).jpeg" alt="Your Photo" class="profile-img">
+        <h2>About Me</h2>
+        <p>I am a recent graduate with a B.Sc. in Computer Science from Jamal Mohamed College, Trichy, currently pursuing a Master's in Computer Application. I am eager to apply my knowledge and skills in a professional environment while actively contributing to the success of the organizations.</p>
+        <a href="./tanishwordproject resume.pdf" class="btn">Download CV</a>
+        <a href="#skills"><p class="scroll-down1">Scroll down</p></a>
+    </div>
+</div>
+
+<div id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <h3>HTML</h3>
+            <br><br>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <br><br>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <br><br>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+            <h3>SQL</h3>
+            <br><br>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+            <h3>PYTHON</h3>
+            <br><br>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+        
+    </div>
+    <a href="#projects"><p class="scroll-down1">Scroll down</p></a>
+</div>
+
+<div id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card" >
+            <h3>Project 1</h3>
+            <p><b>Burger House</b> </p>
+            <a href="https://mohamedthanish.github.io/burger-house-project/" class="btn">Learn more</a>
+        </div>
+        <div  class="project-card" >
+            <h3>Project 2</h3>
+            <p><b>STAYBnB</b></p>
+            <a href="https://mohamedthanish.github.io/stay-bnb/" class="btn">Learn more</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p><b>Travel Website</b></p>
+            <a href="https://mohamedthanish.github.io/travel-website/" class="btn">Learn more</a>
+        </div>
+    </div>
+    <a href="#education"><p class="scroll-down1">Scroll down</p></a>
+</div>
+
+<div id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="education-container">
+        <div class="education-card">
+            <h3>Jamal Mohamed College</h3>
+            <P>Master of Computer Apllication</P>
+            <p>Year: 2024-Present</p>
+        </div>
+        <div class="education-card">
+            <h3>Jamal Mohamed College</h3>
+            <P>BSc.computer Science</P>
+            <p>Percentage: 75%</p>
+            <p>Year: 2021-2024</p>
+        </div>
+        <div class="education-card">
+            <h3>Government Higher Secondary School</h3>
+            <p>Percentage: 78%</p>
+            <p>Year: 2021</p>
+        </div>
+        <div class="education-card">
+            <h3>Jsr Higher Secondary School</h3>
+            <p>Percentage: 67%</p>
+            <p>Year: 2019</p>
+        </div>
+    </div>
+    <a href="#contact-me"><p class="scroll-down1">Scroll down</p></a>
+</div>
+
+<div id="contact-me" class="contact-form">
+    <h2>Contact Me</h2>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    <div class="home-btn">
+        <a href="#home"><p class="scroll-down1">Home</p></a>
+    </div>
+</div>
+
+<!-- Profile Card -->
+<div id="profile-card" class="profile-card">
+    <div class="close-btn">
+        <i class="fas fa-window-close"></i>
+    </div>
+    <img src="./WhatsApp Image 2024-08-30 at 9.00.47 AM (1).jpeg" alt="Profile Photo" class="card-img">
+    <h3>Mohamed Thanish</h3>
+    <p>Frontend Developer</p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/mohamedthanish" target="_blank" class="social-icon">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/MohamedThanish" target="_blank" class="social-icon">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/simply_thanish/" target="_blank" class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="mailto:mohamedtanish786@gmail.com" class="social-icon">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
+</div>
+    <footer>
+        <p>All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/mohamedthanish" target="_blank" class="social-icon">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/MohamedThanish" target="_blank" class="social-icon">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/simply_thanish/" target="_blank" class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="mailto:mohamedtanish786@gmail.com" class="social-icon">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </footer>
+    
+    <script src="./script.js"></script>
+    </body>
+    </html>

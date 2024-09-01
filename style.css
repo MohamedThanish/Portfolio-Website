@@ -1,0 +1,378 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    text-align: center;
+}
+.container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.container .btn {
+    margin-bottom: 20px; /* Add some space between the button and the scroll down text */
+}
+
+.container .scroll-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.scroll-down1 {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 20px 0;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* Remove text underline */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.scroll-link {
+    text-decoration: none; /* Remove text underline */
+    color: #0056b3;
+}
+
+.scroll-down1 {
+    margin-top: 20px;
+    cursor: pointer;
+    color: #0056b3;
+    text-decoration: none; /* This ensures no underline */
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header .nav-list li {
+    margin: 0 20px;
+}
+
+header .nav-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+/* About Me Section */
+.about-me-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-me-section img {
+    width: 175px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 100px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    width: 200px;
+    margin: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 10px;
+    background-color: #007BFF;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+.big-element {
+    width: 250px;
+    height: 140px; /* Adjust based on your content */
+}
+.big-element {
+    overflow: hidden;
+}
+.big-element {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+@media (max-width: 600px) {
+    .big-element {
+        width: 100%; /* Adjust to fit smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
+.big-element {
+    overflow: auto; /* Adds scrollbars if content overflows */
+}
+
+
+/* Education Section */
+.education-section {
+    padding: 100px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education-card {
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-form form {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form label {
+    text-align: left;
+}
+
+.contact-form form input, .contact-form form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form .submit-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Profile Card Styling */
+.profile-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    z-index: 1001;
+    display: none;
+}
+
+.profile-card img.card-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-card .social-icons {
+    margin-top: 20px;
+}
+
+.profile-card .social-icons .social-icon {
+    margin: 0 10px;
+    color: #007BFF;
+    font-size: 20px;
+}
+
+.profile-card .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #007BFF;
+}
+
+.hidden {
+    display: none;
+}
+#home{
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icon {
+    margin: 0 10px;
+    color: #007BFF;
+    font-size: 20px;
+}
+
+footer .social-icon:hover {
+    color: #0056b3;
+}
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    header .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .nav-list.show {
+        display: flex; /* Show the navigation list when the menu is toggled */
+    }
+    header .nav-list li {
+        margin: 10px 0;
+    }
+
+    header .menu-toggle {
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    header .nav-list {
+        display: none; /* Hide the navigation list by default on small screens */
+    }
+
+    header .nav-list.show {
+        display: flex; /* Show the navigation list when menu is toggled */
+    }
+
+    .container .content {
+        padding: 10px;
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+}
+
