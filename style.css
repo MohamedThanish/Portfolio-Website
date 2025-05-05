@@ -14,6 +14,7 @@ body {
     background: url('background-image.jpg') no-repeat center center/cover;
     text-align: center;
 }
+
 .container .content {
     display: flex;
     flex-direction: column;
@@ -25,7 +26,7 @@ body {
 }
 
 .container .btn {
-    margin-bottom: 20px; /* Add some space between the button and the scroll down text */
+    margin-bottom: 20px;
 }
 
 .container .scroll-link {
@@ -33,10 +34,22 @@ body {
     margin-top: 10px;
 }
 
+/* Consistent Scroll Down Text - Blue Color */
 .scroll-down1 {
-    text-decoration: underline;
-    color: white;
+    text-decoration: none !important;
+    color: #007bff !important;
     cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Home button styled same as Scroll Down */
+.home-btn .scroll-down1 {
+    text-decoration: none !important;
+    color:  #007bff !important;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 h1, h2, h3 {
@@ -47,14 +60,11 @@ h1, h2, h3 {
 p {
     margin: 20px 0;
 }
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
+
+/* Remove underline from all anchor elements globally */
+a {
     text-decoration: none;
+    color: inherit;
 }
 
 .btn {
@@ -64,23 +74,11 @@ p {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    text-decoration: none; /* Remove text underline */
+    text-decoration: none;
 }
 
 .btn:hover {
-    background-color: #0056b3;
-}
-
-.scroll-link {
-    text-decoration: none; /* Remove text underline */
-    color: #0056b3;
-}
-
-.scroll-down1 {
-    margin-top: 20px;
-    cursor: pointer;
-    color: #0056b3;
-    text-decoration: none; /* This ensures no underline */
+    background-color:  #007bff;
 }
 
 /* Header */
@@ -186,28 +184,22 @@ header .menu-toggle {
     width: 100%;
     border-radius: 5px;
 }
+
 .big-element {
     width: 250px;
-    height: 140px; /* Adjust based on your content */
-}
-.big-element {
-    overflow: hidden;
-}
-.big-element {
+    height: 140px;
+    overflow: auto;
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-}
-@media (max-width: 600px) {
-    .big-element {
-        width: 100%; /* Adjust to fit smaller screens */
-        height: auto; /* Allow height to adjust based on content */
-    }
-}
-.big-element {
-    overflow: auto; /* Adds scrollbars if content overflows */
+    align-items: center;
+    justify-content: center;
 }
 
+@media (max-width: 600px) {
+    .big-element {
+        width: 100%;
+        height: auto;
+    }
+}
 
 /* Education Section */
 .education-section {
@@ -247,9 +239,11 @@ header .menu-toggle {
 
 .contact-form form label {
     text-align: left;
+    color: blue;
 }
 
-.contact-form form input, .contact-form form textarea {
+.contact-form form input,
+.contact-form form textarea {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -266,7 +260,7 @@ header .menu-toggle {
 }
 
 .contact-form .submit-btn:hover {
-    background-color: #0056b3;
+    background-color:  #007bff;
 }
 
 /* Profile Card Styling */
@@ -314,7 +308,8 @@ header .menu-toggle {
 .hidden {
     display: none;
 }
-#home{
+
+#home {
     text-decoration: none;
 }
 
@@ -335,6 +330,7 @@ footer .social-icon {
 footer .social-icon:hover {
     color: #0056b3;
 }
+
 /* Media Queries for Small Screens */
 @media (max-width: 768px) {
     header .nav-list {
@@ -343,8 +339,9 @@ footer .social-icon:hover {
     }
 
     header .nav-list.show {
-        display: flex; /* Show the navigation list when the menu is toggled */
+        display: flex;
     }
+
     header .nav-list li {
         margin: 10px 0;
     }
@@ -360,11 +357,11 @@ footer .social-icon:hover {
     }
 
     header .nav-list {
-        display: none; /* Hide the navigation list by default on small screens */
+        display: none;
     }
 
     header .nav-list.show {
-        display: flex; /* Show the navigation list when menu is toggled */
+        display: flex;
     }
 
     .container .content {
@@ -374,5 +371,10 @@ footer .social-icon:hover {
     .contact-form form {
         width: 100%;
     }
-}
 
+    a {
+        text-decoration: none;
+    }
+
+    
+}
